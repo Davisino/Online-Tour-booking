@@ -101,15 +101,6 @@ tourSchema.pre('save', function (next) {
   this.slug = slugify(this.name, { lower: true });
   next();
 });
-// tourSchema.pre('save', (next) => {
-//   console.log('Will save document....');
-//   next();
-// });
-
-// tourSchema.post('save', (doc, next) => {
-//   console.log(doc);
-//   next();
-// });
 
 // QUERY MIDDLEWARE
 
